@@ -1,0 +1,5 @@
+body { 
+    font-family: Arial; padding: 20px; background: #f4f4f4; }
+form input, form select, form button { display: block; margin: 10px 0; padding: 10px; width: 300px; }
+ul { margin-top: 20px; }
+li { margin-bottom: 10px; background: #fff; padding: 10px; border-radius: 4px; }

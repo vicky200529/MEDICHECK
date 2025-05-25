@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/styles.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <h2>Your Reports</h2>
+  <form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="file" required />
+    <button>Upload</button>
+  </form>
+  <ul>
+    <% reports.forEach(report => { %>
+      <li><strong><%= report.fileName %></strong>: <%= report.result %> | <%= new Date(report.uploadedAt).toLocaleString() %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>

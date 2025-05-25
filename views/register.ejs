@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/styles.css">
+  <title>Register</title>
+</head>
+<body>
+  <form method="POST" action="/register">
+    <input name="name" placeholder="Name" required />
+    <input name="email" placeholder="Email" required />
+    <input name="password" type="password" placeholder="Password" required />
+    <select name="role">
+      <option value="patient">Patient</option>
+      <option value="doctor">Doctor</option>
+    </select>
+    <button>Register</button>
+  </form>
+</body>
+</html>
